@@ -3,6 +3,8 @@
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
+use Src\Middlewares\JWTMiddleware;
+use Src\Middlewares\RemoveLastBar;
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -21,5 +23,8 @@ $app->get('/', function (Request $request, Response $response) {
 });
 
 (require __DIR__ . '/src/Routes/tarefas.php')($app);
+
+// $app->add(new JWTMiddleware);
+$app->add(new RemoveLastBar);
 
 $app->run();
