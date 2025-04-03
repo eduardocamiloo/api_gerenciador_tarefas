@@ -1,6 +1,6 @@
 # API de Gerenciamento de Tarefas
 
-Essa api foi desenvolvida com intuito de criar um backend separado do frontend.
+Essa api foi desenvolvida com intuito de criar um backend separado do frontend, sua função é criar, editar, deletar e listar tarefas.
 
 ## Como rodar o projeto:
 Clone o projeto:
@@ -22,6 +22,7 @@ Rode as migrations:
 > ```bash
 > vendor/bin/phinx migrate
 > ```
+
 
 
 
