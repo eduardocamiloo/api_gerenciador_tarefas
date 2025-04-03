@@ -1,0 +1,25 @@
+{
+    "name": "eduardocamiloo/api_gerenciador_tarefas",
+    "description": "Api simples de CRUD de tarefas",
+    "type": "project",
+    "require": {
+        "slim/slim": "^4.14",
+        "slim/psr7": "^1.7",
+        "vlucas/phpdotenv": "^5.6",
+        "monolog/monolog": "^3.9",
+        "rakit/validation": "^1.4",
+        "robmorgan/phinx": "^0.16.6"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Camilo",
+            "email": "ec0061769@gmail.com"
+        }
+    ]
+}
