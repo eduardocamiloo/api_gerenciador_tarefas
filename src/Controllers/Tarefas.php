@@ -88,7 +88,7 @@ final class Tarefas
                 return $response->withStatus(500)->withHeader("Content-Type", "application/json");
             }
         } else {
-            $response->getBody()->write(json_encode(["error" => ["message" => "Os dados recebidos não são válidos para a criação de uma tarefa", "errors" => $validation->errors()->firstOfAll()]]));
+            $response->getBody()->write(json_encode( ["error" => ["message" => "Os dados recebidos não são válidos para a criação de uma tarefa", "errors" => $validation->errors()->firstOfAll()]]));
             return $response->withStatus(400)->withHeader("Content-Type", "application/json");
         }
     }
